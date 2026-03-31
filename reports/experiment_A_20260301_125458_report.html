@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отчёт SMOP: experiment_A_20260301_125458</title>
+    <style>
+        :root {
+            --bg-primary: #1a1a2e;
+            --bg-secondary: #16213e;
+            --bg-card: #0f3460;
+            --text-primary: #eaeaea;
+            --text-secondary: #a0a0a0;
+            --accent: #e94560;
+            --accent-green: #4caf50;
+            --accent-yellow: #ffc107;
+            --border: #2a2a4e;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 { color: var(--accent); margin-bottom: 10px; }
+        h2 { color: var(--text-primary); margin: 30px 0 15px; border-bottom: 2px solid var(--accent); padding-bottom: 5px; }
+        h3 { color: var(--text-secondary); margin: 20px 0 10px; }
+        .meta { color: var(--text-secondary); font-size: 0.9em; margin-bottom: 30px; }
+        .meta span { margin-right: 20px; }
+        .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 20px 0; }
+        .card {
+            background: var(--bg-card);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+        }
+        .card-label { color: var(--text-secondary); font-size: 0.85em; text-transform: uppercase; }
+        .card-value { font-size: 2em; font-weight: bold; margin: 5px 0; }
+        .card-detail { font-size: 0.9em; color: var(--text-secondary); }
+        .high { color: var(--accent-green); }
+        .acceptable { color: var(--accent-yellow); }
+        .low { color: var(--accent); }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid var(--border); }
+        th { background: var(--bg-card); color: var(--text-primary); font-weight: 600; }
+        tr:hover { background: rgba(233, 69, 96, 0.1); }
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+        .badge-high { background: var(--accent-green); color: #000; }
+        .badge-acceptable { background: var(--accent-yellow); color: #000; }
+        .badge-low { background: var(--accent); color: #fff; }
+        .bar-container { width: 100px; height: 8px; background: var(--border); border-radius: 4px; display: inline-block; vertical-align: middle; }
+        .bar { height: 100%; border-radius: 4px; }
+        .footer { margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--text-secondary); font-size: 0.85em; text-align: center; }
+        @media (max-width: 768px) {
+            .cards { grid-template-columns: 1fr 1fr; }
+            table { font-size: 0.9em; }
+            th, td { padding: 8px 10px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Отчёт SMOP</h1>
+        <div class="meta">
+            <span>🧪 <strong>experiment_A_20260301_125458</strong></span>
+            <span>📅 02.03.2026 14:12</span>
+            <span>📁 Категория A</span>
+        </div>
+
+        <h2>📈 Общие метрики</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="card-label">Интегральный Q</div>
+                <div class="card-value high">8.8</div>
+                <div class="card-detail">± 1.35 (95% ДИ: 8.0–9.6)</div>
+            </div>
+            <div class="card">
+                <div class="card-label">Синтаксис (S)</div>
+                <div class="card-value">8.9</div>
+                <div class="card-detail">σ = 1.88</div>
+            </div>
+            <div class="card">
+                <div class="card-label">Семантика (M)</div>
+                <div class="card-value">9.1</div>
+                <div class="card-detail">σ = 1.70</div>
+            </div>
+            <div class="card">
+                <div class="card-label">Оптимальность (O)</div>
+                <div class="card-value">8.6</div>
+                <div class="card-detail">σ = 1.65</div>
+            </div>
+            <div class="card">
+                <div class="card-label">Платформа (P)</div>
+                <div class="card-value">8.6</div>
+                <div class="card-detail">σ = 2.14</div>
+            </div>
+            <div class="card">
+                <div class="card-label">Оценено прогонов</div>
+                <div class="card-value">14</div>
+                <div class="card-detail">из 15</div>
+            </div>
+        </div>
+
+        <h2>🤖 Сравнение моделей</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Модель</th>
+                    <th>S</th>
+                    <th>M</th>
+                    <th>O</th>
+                    <th>P</th>
+                    <th>Q</th>
+                    <th>Уровень</th>
+                    <th>Детерминизм</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td><strong>Claude Opus 4.5</strong></td>
+                <td>9.2</td>
+                <td>9.6</td>
+                <td>8.4</td>
+                <td>9.2</td>
+                <td><strong>9.1</strong></td>
+                <td><span class="badge badge-high">Высокий</span></td>
+                <td>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 100%; background: var(--accent-green);"></div>
+                    </div>
+                    100%
+                </td>
+            </tr>
+<tr>
+                <td><strong>GPT-5.2 Codex</strong></td>
+                <td>8.0</td>
+                <td>8.0</td>
+                <td>7.5</td>
+                <td>7.0</td>
+                <td><strong>7.6</strong></td>
+                <td><span class="badge badge-acceptable">Приемлемый</span></td>
+                <td>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 100%; background: var(--accent-green);"></div>
+                    </div>
+                    100%
+                </td>
+            </tr>
+<tr>
+                <td><strong>Gemini 3 Flash</strong></td>
+                <td>9.2</td>
+                <td>9.6</td>
+                <td>9.6</td>
+                <td>9.2</td>
+                <td><strong>9.4</strong></td>
+                <td><span class="badge badge-high">Высокий</span></td>
+                <td>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 100%; background: var(--accent-green);"></div>
+                    </div>
+                    100%
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h2>📝 Результаты по задачам</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Задача</th>
+                    <th>Прогонов</th>
+                    <th>Q (среднее)</th>
+                    <th>Q (медиана)</th>
+                    <th>Разброс</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td><strong>A1</strong>: Сортировка пузырьком</td>
+                <td>3</td>
+                <td>7.7</td>
+                <td>7.5</td>
+                <td>0.5</td>
+            </tr>
+<tr>
+                <td><strong>A2</strong>: Парсинг строки ФИО</td>
+                <td>3</td>
+                <td>10.0</td>
+                <td>10.0</td>
+                <td>0.0</td>
+            </tr>
+<tr>
+                <td><strong>A3</strong>: Подсчёт рабочих дней между двумя датами</td>
+                <td>3</td>
+                <td>8.8</td>
+                <td>9.5</td>
+                <td>3.0</td>
+            </tr>
+<tr>
+                <td><strong>A4</strong>: Парсинг JSON-строки</td>
+                <td>2</td>
+                <td>9.8</td>
+                <td>9.8</td>
+                <td>0.5</td>
+            </tr>
+<tr>
+                <td><strong>A5</strong>: Группировка таблицы значений</td>
+                <td>3</td>
+                <td>8.0</td>
+                <td>8.5</td>
+                <td>3.5</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h2>ℹ️ Метаданные</h2>
+        <div class="card" style="max-width: 500px;">
+            <p><strong>Эксперимент:</strong> experiment_A_20260301_125458</p>
+            <p><strong>Эксперт:</strong> expert_01</p>
+            <p><strong>Моделей:</strong> 3</p>
+            <p><strong>Задач:</strong> 5</p>
+            <p><strong>Прогонов на задачу:</strong> 1</p>
+            <p><strong>Версия фреймворка:</strong> 1.0.0</p>
+        </div>
+
+        <div class="footer">
+            Сгенерировано AI-1C-Code-Generation-Benchmark SMOP Evaluator<br>
+            02.03.2026 14:12
+        </div>
+    </div>
+</body>
+</html>

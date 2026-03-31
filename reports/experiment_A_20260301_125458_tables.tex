@@ -1,0 +1,37 @@
+% SMOP Evaluation Report
+% Experiment: experiment_A_20260301_125458
+% Generated: 2026-03-02T14:12:11.459095
+
+% Model Comparison Table
+\begin{table}[htbp]
+\centering
+\caption{Сравнение качества генерации кода по моделям}
+\label{tab:model-comparison}
+\begin{tabular}{lcccccc}
+\toprule
+Модель & S & M & O & P & Q & Det. \\
+\midrule
+Claude Opus 4.5 & 9.2 & 9.6 & 8.4 & 9.2 & \textbf{9.1} & 100\% \\
+GPT-5.2 Codex & 8.0 & 8.0 & 7.5 & 7.0 & \textbf{7.6} & 100\% \\
+Gemini 3 Flash & 9.2 & 9.6 & 9.6 & 9.2 & \textbf{9.4} & 100\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Task Results Table
+\begin{table}[htbp]
+\centering
+\caption{Результаты оценки по задачам}
+\label{tab:task-results}
+\begin{tabular}{lcccc}
+\toprule
+Задача & Прогонов & Q (mean) & Q (median) & $\sigma$ \\
+\midrule
+A1 & 3 & 7.7 & 7.5 & 0.29 \\
+A2 & 3 & 10.0 & 10.0 & 0.00 \\
+A3 & 3 & 8.8 & 9.5 & 1.61 \\
+A4 & 2 & 9.8 & 9.8 & 0.35 \\
+A5 & 3 & 8.0 & 8.5 & 1.80 \\
+\bottomrule
+\end{tabular}
+\end{table}

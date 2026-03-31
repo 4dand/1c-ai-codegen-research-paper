@@ -1,0 +1,103 @@
+# =============================================================================
+# AI-1C-Code-Generation-Benchmark — Централизованные настройки
+# =============================================================================
+#
+# Этот файл содержит ВСЕ настройки проекта в одном месте.
+# Секреты (API ключи) загружаются из .env файла или переменных окружения.
+#
+# Настройки генераций для задач категорий A/B остаются 
+# в отдельных файлах для гибкости.
+# =============================================================================
+
+
+# Пути проекта
+paths:
+  configs_dir: "configs"            # Папка с конфигами
+  raw_results_dir: "raw_results"    # Папка для сырых JSON результатов
+  code_outputs_dir: "code_outputs"  # Папка для экспорта .bsl файлов
+  logs_dir: "logs"                  # Папка для логов
+  cache_dir: "cache"                # Папка для кэша
+
+  # Файлы конфигов (относительно configs_dir)
+  experiment_file: "experiment.yaml"
+  models_file: "models.yaml"
+  tasks_category_a: "tasks_category_A.yaml"
+  tasks_category_b: "tasks_category_B.yaml"
+
+
+# OpenRouter API
+openrouter:
+  # API ключ загружается из .env (OPENROUTER_API_KEY)
+  base_url: "https://openrouter.ai/api/v1"
+  http_referer: "https://1c-benchmark.local"
+  app_title: "AI-1C-Code-Generation-Benchmark"
+  timeout: 120  # секунды
+
+
+# MCP сервер (https://github.com/vladimir-kharin/1c_mcp)
+# для задач категории B — работа с метаданными 1С)
+mcp:
+  url: "http://localhost:8000"
+  timeout: 30  # секунды
+
+
+# Агент контекста (Agentic Context Loader)
+# для исследования метаданных и инструментов 1С (только для категории B)
+agent:
+  model: "google/gemini-2.0-flash-001"   # Модель для анализа метаданных
+  max_iterations: 5                      # Максимум итераций агента (снижено с 10)
+  max_context_lines: 50                  # Сокращение контекста объекта (снижено с 80)
+  max_total_context_chars: 15000         # Лимит общего контекста в символах (~4k токенов)
+  max_objects: 3                         # Максимум объектов метаданных для загрузки
+  cache:
+    enabled: true                        # Кэшировать собранный контекст
+    dir: "context"                       # Подпапка в cache_dir
+    ttl_hours: 24                        # Время жизни кэша
+  # промпты для агента сбора контекста (agentic context loader)
+  prompts:
+    system: |
+      Ты эксперт по 1С. Твоя задача — БЫСТРО найти нужные метаданные для написания кода.
+      
+      ПРАВИЛА:
+      1. Запроси МАКСИМУМ 2-3 объекта метаданных (регистр, справочник или документ)
+      2. Как только понял структуру нужных объектов — СРАЗУ вызови finish_research
+      3. НЕ запрашивай лишние объекты "на всякий случай"
+      4. Для запроса остатков достаточно: РегистрНакопления + 1 связанный справочник
+      
+      Вызови finish_research как можно раньше!
+    user_template: |
+      Задача:
+      {task_prompt}
+      
+      Найди 1-3 нужных объекта метаданных и СРАЗУ вызови finish_research.
+
+
+# Хеширование ответов (для оценки детерминизма)
+hashing:
+  algorithm: "md5"    # md5, sha256
+  normalize: true     # Убирать пробелы/переносы перед хешированием
+  extract_code: true  # Извлекать код из markdown блоков
+
+
+# Логирование
+logging:
+  level: "INFO"
+  format: "[%(asctime)s] [%(levelname)s] %(name)s: %(message)s"
+  date_format: "%Y-%m-%d %H:%M:%S"
+  console:
+    enabled: false
+    level: "INFO"
+    colorize: true
+  file:
+    enabled: true
+    path: "benchmark.log"
+    level: "DEBUG"
+    rotation:
+      enabled: true
+      max_size_mb: 10
+      backup_count: 5  
+
+
+# Экспорт кода
+export:
+  code_to_bsl: true     # Экспортировать код в .bsl файлы

@@ -1,0 +1,465 @@
+{
+  "experiment_id": "experiment_B_20260301_130327",
+  "generated_at": "2026-03-02T14:12:19.960520",
+  "metadata": {
+    "category": "B",
+    "models_tested": [
+      "Gemini 3 Flash",
+      "Claude Opus 4.5",
+      "GPT-5.2 Codex"
+    ],
+    "tasks_count": 5,
+    "runs_per_task": 1,
+    "total_runs_evaluated": 15,
+    "total_runs": 15,
+    "evaluator_id": "expert_01",
+    "framework_version": "1.0.0",
+    "started_at": "2026-03-01T15:18:01.241168",
+    "completed_at": "2026-03-01T16:23:25.038595"
+  },
+  "summary": {
+    "overall_Q": {
+      "mean": 6.8,
+      "std": 1.953,
+      "median": 7.0,
+      "min": 2.0,
+      "max": 9.0,
+      "ci_lower": 5.718,
+      "ci_upper": 7.882,
+      "count": 15
+    },
+    "by_metric": {
+      "S": {
+        "mean": 6.133,
+        "std": 2.56,
+        "median": 6.0,
+        "min": 0.0,
+        "max": 10.0,
+        "count": 15
+      },
+      "M": {
+        "mean": 7.067,
+        "std": 2.374,
+        "median": 8.0,
+        "min": 2.0,
+        "max": 10.0,
+        "count": 15
+      },
+      "O": {
+        "mean": 7.333,
+        "std": 2.225,
+        "median": 8.0,
+        "min": 2.0,
+        "max": 10.0,
+        "count": 15
+      },
+      "P": {
+        "mean": 6.667,
+        "std": 1.799,
+        "median": 6.0,
+        "min": 4.0,
+        "max": 10.0,
+        "count": 15
+      }
+    },
+    "total_evaluated": 15,
+    "total_runs": 15,
+    "determinism": {
+      "mean": 1.0,
+      "std": 0.0
+    }
+  },
+  "by_model": [
+    {
+      "model_id": "anthropic/claude-opus-4.5",
+      "model_name": "Claude Opus 4.5",
+      "tasks_count": 5,
+      "runs_count": 5,
+      "S": {
+        "mean": 8.0,
+        "std": 2.0,
+        "median": 8.0,
+        "min": 6.0,
+        "max": 10.0,
+        "count": 5
+      },
+      "M": {
+        "mean": 8.4,
+        "std": 0.894,
+        "median": 8.0,
+        "min": 8.0,
+        "max": 10.0,
+        "count": 5
+      },
+      "O": {
+        "mean": 9.2,
+        "std": 1.095,
+        "median": 10.0,
+        "min": 8.0,
+        "max": 10.0,
+        "count": 5
+      },
+      "P": {
+        "mean": 8.0,
+        "std": 1.414,
+        "median": 8.0,
+        "min": 6.0,
+        "max": 10.0,
+        "count": 5
+      },
+      "Q": {
+        "mean": 8.4,
+        "std": 0.894,
+        "median": 9.0,
+        "min": 7.0,
+        "max": 9.0,
+        "ci_lower": 7.29,
+        "ci_upper": 9.51,
+        "count": 5
+      },
+      "determinism_mean": 100.0
+    },
+    {
+      "model_id": "openai/gpt-5.2-codex",
+      "model_name": "GPT-5.2 Codex",
+      "tasks_count": 5,
+      "runs_count": 5,
+      "S": {
+        "mean": 4.0,
+        "std": 2.449,
+        "median": 4.0,
+        "min": 0.0,
+        "max": 6.0,
+        "count": 5
+      },
+      "M": {
+        "mean": 4.8,
+        "std": 2.683,
+        "median": 6.0,
+        "min": 2.0,
+        "max": 8.0,
+        "count": 5
+      },
+      "O": {
+        "mean": 5.2,
+        "std": 2.28,
+        "median": 6.0,
+        "min": 2.0,
+        "max": 8.0,
+        "count": 5
+      },
+      "P": {
+        "mean": 5.6,
+        "std": 1.673,
+        "median": 6.0,
+        "min": 4.0,
+        "max": 8.0,
+        "count": 5
+      },
+      "Q": {
+        "mean": 4.9,
+        "std": 1.782,
+        "median": 5.5,
+        "min": 2.0,
+        "max": 6.5,
+        "ci_lower": 2.688,
+        "ci_upper": 7.112,
+        "count": 5
+      },
+      "determinism_mean": 100.0
+    },
+    {
+      "model_id": "google/gemini-3-flash-preview",
+      "model_name": "Gemini 3 Flash",
+      "tasks_count": 5,
+      "runs_count": 5,
+      "S": {
+        "mean": 6.4,
+        "std": 1.673,
+        "median": 6.0,
+        "min": 4.0,
+        "max": 8.0,
+        "count": 5
+      },
+      "M": {
+        "mean": 8.0,
+        "std": 1.414,
+        "median": 8.0,
+        "min": 6.0,
+        "max": 10.0,
+        "count": 5
+      },
+      "O": {
+        "mean": 7.6,
+        "std": 0.894,
+        "median": 8.0,
+        "min": 6.0,
+        "max": 8.0,
+        "count": 5
+      },
+      "P": {
+        "mean": 6.4,
+        "std": 1.673,
+        "median": 6.0,
+        "min": 4.0,
+        "max": 8.0,
+        "count": 5
+      },
+      "Q": {
+        "mean": 7.1,
+        "std": 1.245,
+        "median": 7.5,
+        "min": 5.0,
+        "max": 8.0,
+        "ci_lower": 5.554,
+        "ci_upper": 8.646,
+        "count": 5
+      },
+      "determinism_mean": 100.0
+    }
+  ],
+  "by_task": [
+    {
+      "task_id": "B1",
+      "task_name": "Получение остатков товаров массива",
+      "models_count": 3,
+      "runs_count": 3,
+      "Q": {
+        "mean": 7.5,
+        "std": 1.803,
+        "median": 8.0,
+        "min": 5.5,
+        "max": 9.0,
+        "ci_lower": 3.021,
+        "ci_upper": 11.979,
+        "count": 3
+      },
+      "by_model": {
+        "anthropic/claude-opus-4.5": {
+          "mean": 9.0,
+          "std": 0.0,
+          "median": 9.0,
+          "min": 9.0,
+          "max": 9.0,
+          "ci_lower": 9.0,
+          "ci_upper": 9.0,
+          "count": 1
+        },
+        "openai/gpt-5.2-codex": {
+          "mean": 5.5,
+          "std": 0.0,
+          "median": 5.5,
+          "min": 5.5,
+          "max": 5.5,
+          "ci_lower": 5.5,
+          "ci_upper": 5.5,
+          "count": 1
+        },
+        "google/gemini-3-flash-preview": {
+          "mean": 8.0,
+          "std": 0.0,
+          "median": 8.0,
+          "min": 8.0,
+          "max": 8.0,
+          "ci_lower": 8.0,
+          "ci_upper": 8.0,
+          "count": 1
+        }
+      }
+    },
+    {
+      "task_id": "B2",
+      "task_name": "Заполнение цен в табличной части",
+      "models_count": 3,
+      "runs_count": 3,
+      "Q": {
+        "mean": 7.167,
+        "std": 0.764,
+        "median": 7.0,
+        "min": 6.5,
+        "max": 8.0,
+        "ci_lower": 5.269,
+        "ci_upper": 9.064,
+        "count": 3
+      },
+      "by_model": {
+        "anthropic/claude-opus-4.5": {
+          "mean": 8.0,
+          "std": 0.0,
+          "median": 8.0,
+          "min": 8.0,
+          "max": 8.0,
+          "ci_lower": 8.0,
+          "ci_upper": 8.0,
+          "count": 1
+        },
+        "openai/gpt-5.2-codex": {
+          "mean": 6.5,
+          "std": 0.0,
+          "median": 6.5,
+          "min": 6.5,
+          "max": 6.5,
+          "ci_lower": 6.5,
+          "ci_upper": 6.5,
+          "count": 1
+        },
+        "google/gemini-3-flash-preview": {
+          "mean": 7.0,
+          "std": 0.0,
+          "median": 7.0,
+          "min": 7.0,
+          "max": 7.0,
+          "ci_lower": 7.0,
+          "ci_upper": 7.0,
+          "count": 1
+        }
+      }
+    },
+    {
+      "task_id": "B3",
+      "task_name": "Списание товаров по FIFO",
+      "models_count": 3,
+      "runs_count": 3,
+      "Q": {
+        "mean": 5.333,
+        "std": 3.512,
+        "median": 5.0,
+        "min": 2.0,
+        "max": 9.0,
+        "ci_lower": -3.391,
+        "ci_upper": 14.058,
+        "count": 3
+      },
+      "by_model": {
+        "anthropic/claude-opus-4.5": {
+          "mean": 9.0,
+          "std": 0.0,
+          "median": 9.0,
+          "min": 9.0,
+          "max": 9.0,
+          "ci_lower": 9.0,
+          "ci_upper": 9.0,
+          "count": 1
+        },
+        "openai/gpt-5.2-codex": {
+          "mean": 2.0,
+          "std": 0.0,
+          "median": 2.0,
+          "min": 2.0,
+          "max": 2.0,
+          "ci_lower": 2.0,
+          "ci_upper": 2.0,
+          "count": 1
+        },
+        "google/gemini-3-flash-preview": {
+          "mean": 5.0,
+          "std": 0.0,
+          "median": 5.0,
+          "min": 5.0,
+          "max": 5.0,
+          "ci_lower": 5.0,
+          "ci_upper": 5.0,
+          "count": 1
+        }
+      }
+    },
+    {
+      "task_id": "B4",
+      "task_name": "Расчёт себестоимости продажи",
+      "models_count": 3,
+      "runs_count": 3,
+      "Q": {
+        "mean": 6.5,
+        "std": 1.803,
+        "median": 7.0,
+        "min": 4.5,
+        "max": 8.0,
+        "ci_lower": 2.021,
+        "ci_upper": 10.979,
+        "count": 3
+      },
+      "by_model": {
+        "anthropic/claude-opus-4.5": {
+          "mean": 7.0,
+          "std": 0.0,
+          "median": 7.0,
+          "min": 7.0,
+          "max": 7.0,
+          "ci_lower": 7.0,
+          "ci_upper": 7.0,
+          "count": 1
+        },
+        "openai/gpt-5.2-codex": {
+          "mean": 4.5,
+          "std": 0.0,
+          "median": 4.5,
+          "min": 4.5,
+          "max": 4.5,
+          "ci_lower": 4.5,
+          "ci_upper": 4.5,
+          "count": 1
+        },
+        "google/gemini-3-flash-preview": {
+          "mean": 8.0,
+          "std": 0.0,
+          "median": 8.0,
+          "min": 8.0,
+          "max": 8.0,
+          "ci_lower": 8.0,
+          "ci_upper": 8.0,
+          "count": 1
+        }
+      }
+    },
+    {
+      "task_id": "B5",
+      "task_name": "Пересчёт валютных сумм",
+      "models_count": 3,
+      "runs_count": 3,
+      "Q": {
+        "mean": 7.5,
+        "std": 1.5,
+        "median": 7.5,
+        "min": 6.0,
+        "max": 9.0,
+        "ci_lower": 3.773,
+        "ci_upper": 11.227,
+        "count": 3
+      },
+      "by_model": {
+        "anthropic/claude-opus-4.5": {
+          "mean": 9.0,
+          "std": 0.0,
+          "median": 9.0,
+          "min": 9.0,
+          "max": 9.0,
+          "ci_lower": 9.0,
+          "ci_upper": 9.0,
+          "count": 1
+        },
+        "openai/gpt-5.2-codex": {
+          "mean": 6.0,
+          "std": 0.0,
+          "median": 6.0,
+          "min": 6.0,
+          "max": 6.0,
+          "ci_lower": 6.0,
+          "ci_upper": 6.0,
+          "count": 1
+        },
+        "google/gemini-3-flash-preview": {
+          "mean": 7.5,
+          "std": 0.0,
+          "median": 7.5,
+          "min": 7.5,
+          "max": 7.5,
+          "ci_lower": 7.5,
+          "ci_upper": 7.5,
+          "count": 1
+        }
+      }
+    }
+  ],
+  "by_category": {},
+  "inter_rater_reliability": null
+}
