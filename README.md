@@ -108,15 +108,6 @@
 
 ---
 
-## 🔗 Связанные репозитории
-
-| Репозиторий | Описание |
-|-------------|----------|
-| [`ai-1c-code-gen-benchmark`](https://github.com/yulia2004alarm/ai-1c-code-gen-benchmark) | Open Source научное ядро — код эксперимента |
-| [`genlab-1c`](https://github.com/yulia2004alarm/genlab-1c) | Веб-платформа GenLab-1C |
-
----
-
 ## 📜 Лицензия
 
 Текст работы и материалы исследования распространяются под лицензией
