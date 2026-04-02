@@ -53,6 +53,14 @@
 </p>
 
 <p align="center">
+  <img src="reports/charts/experiment_A_20260301_125458/experiment_A_20260301_125458_q_by_model.png" alt="Интегральный показатель Q по моделям — категория А" width="48%"/>
+  <img src="reports/charts/experiment_B_20260301_130327/experiment_B_20260301_130327_q_by_model.png" alt="Интегральный показатель Q по моделям — категория Б" width="48%"/>
+</p>
+<p align="center">
+  <em>Средний Q с доверительным интервалом (±σ) — Слева: Категория А &nbsp;|&nbsp; Справа: Категория Б</em>
+</p>
+
+<p align="center">
   <img src="reports/charts/experiment_A_20260301_125458/experiment_A_20260301_125458_radar.png" alt="SMOP-профиль по критериям — категория А" width="48%"/>
   <img src="reports/charts/experiment_B_20260301_130327/experiment_B_20260301_130327_radar.png" alt="SMOP-профиль по критериям — категория Б" width="48%"/>
 </p>
@@ -66,6 +74,22 @@
 </p>
 <p align="center">
   <em>Тепловая карта Q по задачам и моделям — Слева: Категория А &nbsp;|&nbsp; Справа: Категория Б</em>
+</p>
+
+<p align="center">
+  <img src="reports/charts/experiment_A_20260301_125458/experiment_A_20260301_125458_boxplot.png" alt="Разброс Q по моделям — категория А" width="48%"/>
+  <img src="reports/charts/experiment_B_20260301_130327/experiment_B_20260301_130327_boxplot.png" alt="Разброс Q по моделям — категория Б" width="48%"/>
+</p>
+<p align="center">
+  <em>Разброс Q по моделям (boxplot) — Слева: Категория А &nbsp;|&nbsp; Справа: Категория Б</em>
+</p>
+
+<p align="center">
+  <img src="reports/charts/experiment_A_20260301_125458/experiment_A_20260301_125458_distribution.png" alt="Распределение оценок SMOP — категория А" width="48%"/>
+  <img src="reports/charts/experiment_B_20260301_130327/experiment_B_20260301_130327_distribution.png" alt="Распределение оценок SMOP — категория Б" width="48%"/>
+</p>
+<p align="center">
+  <em>Распределение оценок по критериям SMOP (S, M, O, P) — Слева: Категория А &nbsp;|&nbsp; Справа: Категория Б</em>
 </p>
 
 ### Детальные метрики SMOP — Категория Б
