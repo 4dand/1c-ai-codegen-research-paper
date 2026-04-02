@@ -1,0 +1,21 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python (если будет локальная аналитика)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Temp
+*.tmp
+*.bak
