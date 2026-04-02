@@ -45,24 +45,24 @@
 | **Среднее** | **8.8** | **6.8** | **−2.0** |
 
 <p align="center">
-  <img src="reports/charts/experiment_A_20260301_125458/experiment_A_20260301_125458_models_comparison.png" alt="Сравнение моделей — категория А" width="420"/>
-  <img src="reports/charts/experiment_B_20260301_130327/experiment_B_20260301_130327_models_comparison.png" alt="Сравнение моделей — категория Б" width="420"/>
+  <img src="reports/charts/experiment_A_20260301_125458/experiment_A_20260301_125458_models_comparison.png" alt="Сравнение моделей — категория А" width="48%"/>
+  <img src="reports/charts/experiment_B_20260301_130327/experiment_B_20260301_130327_models_comparison.png" alt="Сравнение моделей — категория Б" width="48%"/>
 </p>
 <p align="center">
   <em>Сравнение Q по моделям — Слева: Категория А (алгоритмические задачи) &nbsp;|&nbsp; Справа: Категория Б (платформенные задачи, УТ11)</em>
 </p>
 
 <p align="center">
-  <img src="reports/charts/experiment_A_20260301_125458/experiment_A_20260301_125458_radar.png" alt="SMOP-профиль по критериям — категория А" width="420"/>
-  <img src="reports/charts/experiment_B_20260301_130327/experiment_B_20260301_130327_radar.png" alt="SMOP-профиль по критериям — категория Б" width="420"/>
+  <img src="reports/charts/experiment_A_20260301_125458/experiment_A_20260301_125458_radar.png" alt="SMOP-профиль по критериям — категория А" width="48%"/>
+  <img src="reports/charts/experiment_B_20260301_130327/experiment_B_20260301_130327_radar.png" alt="SMOP-профиль по критериям — категория Б" width="48%"/>
 </p>
 <p align="center">
   <em>Радарная диаграмма SMOP — Слева: Категория А &nbsp;|&nbsp; Справа: Категория Б</em>
 </p>
 
 <p align="center">
-  <img src="reports/charts/experiment_A_20260301_125458/experiment_A_20260301_125458_heatmap.png" alt="Тепловая карта Q — категория А" width="420"/>
-  <img src="reports/charts/experiment_B_20260301_130327/experiment_B_20260301_130327_heatmap.png" alt="Тепловая карта Q — категория Б" width="420"/>
+  <img src="reports/charts/experiment_A_20260301_125458/experiment_A_20260301_125458_heatmap.png" alt="Тепловая карта Q — категория А" width="48%"/>
+  <img src="reports/charts/experiment_B_20260301_130327/experiment_B_20260301_130327_heatmap.png" alt="Тепловая карта Q — категория Б" width="48%"/>
 </p>
 <p align="center">
   <em>Тепловая карта Q по задачам и моделям — Слева: Категория А &nbsp;|&nbsp; Справа: Категория Б</em>
